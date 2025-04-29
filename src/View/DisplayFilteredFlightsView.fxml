@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>  
+
+<VBox fx:controller = "controller.Flights.DisplayFlightsController" alignment="CENTER" styleClass="background" prefHeight="800.0" prefWidth="400.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1">
+
+  <ImageView>
+  <fitHeight>200</fitHeight>
+  <preserveRatio>true</preserveRatio>
+  <image>
+        <Image url="@/image/flight.png"/>
+    </image>
+</ImageView>
+<Separator/>
+<Label text = "Filtered Flights" styleClass= "heading"/>
+ <Separator />
+
+<TextField fx:id="countrytf"  styleClass ="inputField"/>        
+    
+  <TableView fx:id="tableView" >
+    <columns>     
+      <TableColumn text = "Airline"  fx:id = "airline" prefWidth = "120">  <prefWidth>100.0</prefWidth></TableColumn>
+      <TableColumn text = "Flight Number"  fx:id = "flightno"> <prefWidth>80.0</prefWidth></TableColumn>
+      <TableColumn text = "Takeoff"  fx:id = "takeoff">  <prefWidth>80.0</prefWidth></TableColumn>
+      <TableColumn text = "Landing"  fx:id = "landing">
+       <prefWidth>80.0</prefWidth>
+      </TableColumn>
+      <TableColumn text = "Cost"  fx:id = "cost">  <prefWidth>80.0</prefWidth></TableColumn>
+      </columns>
+      </TableView>
+    
+  <Button fx:id="Exit" text="Close" onAction="#handleClose" prefWidth = "800" prefHeight = "100" />
+  <stylesheets>
+    <URL value ="@../style.css"/>
+    </stylesheets> 
+</VBox>
+
+
