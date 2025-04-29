@@ -1,0 +1,49 @@
+    </HBox>
+    
+
+    <Region VBox.vgrow="ALWAYS" />
+    
+    <GridPane alignment ="CENTER">
+    <rowConstraints>
+    <RowConstraints vgrow="ALWAYS"  minHeight = "10.0" prefHeight ="100.0"/>
+    </rowConstraints>
+        <Button fx:id="ViewAllFlights" text="View All Flights" GridPane.columnIndex ="0" prefWidth ="425" prefHeight = "200"/>
+        <Button fx:id="FilterFlights" text=" View All Flights by Country" GridPane.columnIndex ="1" prefWidth ="425" prefHeight = "200" />
+        <Button fx:id="AddFlight" text="Add a Flight" GridPane.columnIndex ="2" prefWidth ="425" prefHeight = "200"/>
+        <Button fx:id="RemoveFlight" text="Remove a Flight" GridPane.columnIndex ="3" prefWidth ="425" prefHeight = "200"/>
+        <Button fx:id="Exit" text="Close"  GridPane.columnIndex ="4" prefWidth ="425" prefHeight = "200"/>
+    </GridPane>
+    <stylesheets>
+    <URL value ="@view/style.css"/>
+    </stylesheets> 
+    
+        </VBox> -->
+
+<VBox fx:controller="controller.Flights.ExploreFlightsController"  xmlns:fx="http://javafx.com/fxml/1" prefHeight="200.0" prefWidth="600.0" spacing = "20" styleClass="background" alignment="CENTER">
+    <ImageView>
+        <image>
+            <Image url="/image/flight.png" />
+        </image>
+    </ImageView>
+        <Separator />
+
+    <HBox  alignment ="CENTER">
+    <Label text = "Hi " styleClass = "Label"/>
+    <Label fx:id = "nameLabel" styleClass="Label"/>
+    <Label text = ", Welcome to the flights section" style="Label"/> 
+    </HBox>
+            <Separator />
+
+
+    
+    <HBox alignment ="CENTER" >
+        <Button fx:id="ViewAllFlights" text="View All Flights"  prefHeight = "150" prefWidth ="400"  styleClass ="Button"/>
+        <Button fx:id="FilterFlights" text="View All Flights by Country" prefHeight = "100" prefWidth ="400" styleClass ="Button"/>
+        <Button fx:id="AddFlight" text="Add a Flight"   prefWidth ="400" prefHeight = "100" styleClass ="Button"/>
+         <Button fx:id="RemoveFlight" text="Remove a Flight" GridPane.columnIndex ="3" prefWidth ="425" prefHeight = "200"/>
+        <Button fx:id="Exit" text="Close"  prefWidth ="400" prefHeight = "100" styleClass ="Button"/>
+    </HBox>
+    <stylesheets>
+    <URL value ="@../style.css"/>
+    </stylesheets> 
+        </VBox>

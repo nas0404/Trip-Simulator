@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<!-- 
+
+
+<VBox fx:controller="controller.Destinations.ExploreDestinationsController"  xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="800.0" styleClass="background" alignment="CENTER">
+    <Separator />
+    <ImageView>
+        <image>
+            <Image url="file:///C:/Users/nasee/Downloads/AgencyTech/src/image/flight.png" />
+        </image>
+    </ImageView>
+    
+    <HBox  alignment ="CENTER" style = "-fx-padding: 20 0 0 0" >
+    <Label text = "Hi " style="-fx-font-size: 22"/>
+    <Label fx:id = "nameLabel" style="-fx-font-size: 22"/>
+    <Label text = ", Welcome to the Destinations section" style="-fx-font-size: 22"/> 
+        <Separator />
+    </HBox>
+    
+
+    <Region VBox.vgrow="ALWAYS" />
+    
+    <GridPane alignment ="CENTER">
+    <rowConstraints>
+    <RowConstraints vgrow="ALWAYS"  minHeight = "10.0" prefHeight ="100.0"/>
+    </rowConstraints>
+        <Button fx:id="ViewAllDestinations" text="View All Destinations" GridPane.columnIndex ="0" prefWidth ="425" prefHeight = "200"/>
+        <Button fx:id="FilterDestinations" text=" View All Destinations by Country" GridPane.columnIndex ="1" prefWidth ="425" prefHeight = "200" />
+        <Button fx:id="AddDestination" text="Add a Destination" GridPane.columnIndex ="2" prefWidth ="425" prefHeight = "200"/>
+        <Button fx:id="RemoveDestination" text="Remove a Destination" GridPane.columnIndex ="2" prefWidth ="425" prefHeight = "200"/>
+        <Button fx:id="Exit" text="Close"  GridPane.columnIndex ="3" prefWidth ="425" prefHeight = "200"/>
+    </GridPane>
+    <stylesheets>
+    <URL value ="@style.css"/>
+    </stylesheets> 
+        </VBox>
+   -->
+  <VBox fx:controller="controller.Destinations.ExploreDestinationsController"  xmlns:fx="http://javafx.com/fxml/1" prefHeight="200.0" prefWidth="600.0" spacing = "20" styleClass="background" alignment="CENTER">
+    <ImageView>
+        <image>
+            <Image url="/image/destination.png" />
+        </image>
+    </ImageView>
+        <Separator />
+
+    <HBox  alignment ="CENTER">
+    <Label text = "Hi " styleClass = "Label"/>
+    <Label fx:id = "nameLabel" styleClass="Label"/>
+    <Label text = ", Welcome to the Destinations section" style="Label"/> 
+    </HBox>
+            <Separator />
+
+
+    
+    <HBox alignment ="CENTER" >
+        <Button fx:id="ViewAllDestinations" text="View All Destinations"  prefHeight = "150" prefWidth ="400"  styleClass ="Button"/>
+        <Button fx:id="FilterDestinations" text="View All Destinations by Country" prefHeight = "100" prefWidth ="400" styleClass ="Button"/>
+        <Button fx:id="AddDestination" text="Add a Destination"   prefWidth ="400" prefHeight = "100" styleClass ="Button"/>
+         <Button fx:id="RemoveDestination" text="Remove a Destination" GridPane.columnIndex ="3" prefWidth ="425" prefHeight = "200"/>
+        <Button fx:id="Exit" text="Close"  prefWidth ="400" prefHeight = "100" styleClass ="Button"/>
+    </HBox>
+    <stylesheets>
+    <URL value ="@../style.css"/>
+    </stylesheets> 
+        </VBox>
